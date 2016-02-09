@@ -9,5 +9,5 @@
  */
 angular.module('panelApp')
   .service('docsService', function($http) {
-    return $http.get('/panel/api/files');
+    return $http.get('/api/files');
   });

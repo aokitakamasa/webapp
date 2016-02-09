@@ -33,7 +33,7 @@ angular.module('panelApp')
       if (localStorage.getItem('ttl')) {
         localStorage.removeItem('ttl');
       }
-      $http.post('/panel/api/logout').then(function success(resp) {
+      $http.post('/api/logout').then(function success(resp) {
         console.log(resp);
         window.location.replace('/panel/login.html');
 

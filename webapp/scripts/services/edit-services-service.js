@@ -10,6 +10,6 @@
 angular.module('panelApp')
   .service('editServicesService', function($http) {
     return function(message) {
-      return $http.post('/panel/api/otrs/sendIssue', message);
+      return $http.post('/api/otrs/sendIssue', message);
     };
   });

@@ -10,6 +10,6 @@
 angular.module('panelApp')
   .service('changePasswordService', function($http) {
     return function(password) {
-      return $http.post('/panel/api/user/changePassword', password);
+      return $http.post('/api/user/changePassword', password);
     };
   });

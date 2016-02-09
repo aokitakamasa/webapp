@@ -13,9 +13,9 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
-  <link rel="stylesheet" href="/panel/fonts/MyFontsWebfontsKit.css">
-  <link rel="stylesheet" href="/panel/styles/main.css">
-  <link rel="stylesheet" href="/panel/styles/panel.css">
+  <link rel="stylesheet" href="/fonts/MyFontsWebfontsKit.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/panel.css">
   <!-- endbuild -->
 </head>
 
@@ -25,7 +25,7 @@
   <![endif]-->
   <!-- preloader -->
   <div id="preloaderMain" ng-if="main.loading" class="preloader fade-custom">
-    <img class="wheel" src="/panel/images/ajax_loader_gray_64.gif" alt="Preloader">
+    <img class="wheel" src="/images/ajax_loader_gray_64.gif" alt="Preloader">
   </div>
   <!-- /.preloader -->
   <div id="panel" ng-controller="PanelCtrl" ng-hide="main.loading" class="animate-custom">
@@ -41,7 +41,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="logo-top-left" href="">
-              <img alt="Ikona m_platform" src="/panel/images/logo-m_platform24.png" height="26">
+              <img alt="Ikona m_platform" src="/images/logo-m_platform24.png" height="26">
             </a>
           </div>
           <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -140,7 +140,7 @@
             <li class="list-group-item" ng-class="{'selected': currentTerminal == terminal}" ng-repeat="terminal in terminals" ng-click="setCurrentTerminal(terminal)">
               <div class="media">
                 <div class="media-left">
-                  <img class="media-object" src="/panel/images/logo-kasa.png" alt="Ikona kasa" height="50">
+                  <img class="media-object" src="/images/logo-kasa.png" alt="Ikona kasa" height="50">
                 </div>
                 <div class="media-body">
                   <span class="media-heading terminal-name">{{ terminal.name}}</span>
@@ -231,7 +231,7 @@
           <!-- Service details-->
           <div class="details service-details" ng-if="currentService">
             <div ng-if="currentService.service == 'evoucher'">
-              <img src="/panel/images/doladowania.czarny.png" alt="Ikona evoucher" height="100">
+              <img src="/images/doladowania.czarny.png" alt="Ikona evoucher" height="100">
               <h4 class="details-title">Doładowanie eVoucher</h4>
               <p>
                 <p>Usluga daje możliwość zakupu doładowań prepaid, w szczególności telefonów komórkowych, w prosty sposób, bez konieczności posiadania kart doładowujących dla między innymi: Simplus, Orange, Play, T-mobile na kartę, Heyah, Halo Polsat, Paysafecard, Mobilking, Telegrosik, Tele24, Telepin, easyCall. Potwierdzeniem zakupu doładowania jest wydruk z kasy fiskalnej, na którym znajduje się kod doładowujący. Usługa doładowań dostarczona jest przez PayTel S.A.</p>
@@ -240,7 +240,7 @@
               </p>
             </div>
             <div ng-if="currentService.service == 'epay'">
-              <img src="/panel/images/platnosc.kartowa.czarny.png" alt="Ikona epay" height="100">
+              <img src="/images/platnosc.kartowa.czarny.png" alt="Ikona epay" height="100">
               <h4 class="details-title">Płatności kartą (ePay)</h4>
               <p>
                 <p>Usługa daje użytkownikowi możliwość zapłaty za towary i usługi kartą płatniczą VISA lub MasterCard z wykorzystaniem kasy fiskalnej firmy Novitus lub Elzab ołączonej z PIN-padem bez konieczności posiadania przez sprzedawcę terminala POS. Płatności kartą obsługiwane są przez PayTel S.A.</p>
@@ -257,7 +257,7 @@
       <div class="info-buttons row">
         <div class="col-sm-12 frame">
           <ul class="nav nav-pills nav-justified">
-            <li><a href="/panel/rules.html" target="_blank" class="btn button-red">Regulamin</a></li>
+            <li><a href="/rules.html" target="_blank" class="btn button-red">Regulamin</a></li>
             <li><a href="" class="btn button-red" ng-click="setCurrentInfo('contacts')">Kontakt</a></li>
             <li><a href="" class="btn button-red" ng-click="setCurrentInfo('faq')">FAQ</a></li>
             <li><a href="" class="btn button-red" ng-click="setCurrentInfo('docs')">Dokumenty</a></li>
@@ -281,7 +281,7 @@
                     <td ng-repeat="terminal in terminals">
                       <div class="media">
                         <div class="media-left">
-                          <img class="media-object hidden-xs" src="/panel/images/logo-kasa.png" alt="Ikona kasa" height="50">
+                          <img class="media-object hidden-xs" src="/images/logo-kasa.png" alt="Ikona kasa" height="50">
                         </div>
                         <div class="media-body">
                           <div class="media-heading terminal-name">{{ terminal.name}}</div>
@@ -518,7 +518,7 @@
             <div ng-controller="DocsCtrl as docs" class="docs-table-container">
               <!-- preloader -->
               <div id="preloaderDocs" ng-show="docs.loading" class="preloader-justify fade-custom">
-                <img class="wheel" src="/panel/images/ajax_loader_gray_64.gif" alt="Preloader">
+                <img class="wheel" src="/images/ajax_loader_gray_64.gif" alt="Preloader">
               </div>
               <!-- /.preloader -->
               <table class="table table-hover docs-table" ng-hide="docs.loading">
@@ -538,7 +538,7 @@
                     <td>{{ doc.fileTypeName }}</td>
                     <td>{{ doc.creationDate | date }}</td>
                     <td>
-                      <a ng-href="/panel/api/files/{{ doc.id }}" type="button" class="download-link"><span class="glyphicon glyphicon-download-alt"></span></a>
+                      <a ng-href="/api/files/{{ doc.id }}" type="button" class="download-link"><span class="glyphicon glyphicon-download-alt"></span></a>
                     </td>
                   </tr>
                 </tbody>
@@ -551,7 +551,7 @@
             <div ng-controller="NewsCtrl as news" class="news-table-container">
               <!-- preloader -->
               <div id="preloaderDocs" ng-show="news.loading" class="preloader-justify fade-custom">
-                <img class="wheel" src="/panel/images/ajax_loader_gray_64.gif" alt="Preloader">
+                <img class="wheel" src="/images/ajax_loader_gray_64.gif" alt="Preloader">
               </div>
               <!-- /.preloader -->
               <table class="table table-hover news-table" style="width:100%; word-wrap:break-word; table-layout: fixed;" ng-hide="news.loading">
@@ -591,28 +591,28 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:js({.tmp,app}) scripts/scripts.js -->
-  <script src="/panel/scripts/app.js"></script>
-  <script src="/panel/scripts/controllers/main-ctrl.js"></script>
-  <script src="/panel/scripts/controllers/panel-ctrl.js"></script>
-  <script src="/panel/scripts/controllers/change-password-ctrl.js"></script>
-  <script src="/panel/scripts/controllers/contact-form-ctrl.js"></script>
-  <script src="/panel/scripts/controllers/edit-services-form-ctrl.js"></script>
-  <script src="/panel/scripts/controllers/docs-ctrl.js"></script>
-  <script src="/panel/scripts/controllers/news-ctrl.js"></script>
-  <script src="/panel/scripts/services/auth-service.js"></script>
-  <script src="/panel/scripts/services/rest-service.js"></script>
-  <script src="/panel/scripts/services/change-password-service.js"></script>
-  <script src="/panel/scripts/services/change-terminal-name-service.js"></script>
-  <script src="/panel/scripts/services/contact-form-service.js"></script>
-  <script src="/panel/scripts/services/edit-services-service.js"></script>
-  <script src="/panel/scripts/services/docs-service.js"></script>
-  <script src="/panel/scripts/services/news-service.js"></script>
-  <script src="/panel/scripts/services/news-service.js"></script>
-  <script src="/panel/scripts/directives/pw-capital-validator.js"></script>
-  <script src="/panel/scripts/directives/pw-length-validator.js"></script>
-  <script src="/panel/scripts/directives/pw-match-validator.js"></script>
-  <script src="/panel/scripts/directives/pw-number-validator.js"></script>
-  <script src="/panel/scripts/directives/pw-special-validator.js"></script>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/controllers/main-ctrl.js"></script>
+  <script src="/scripts/controllers/panel-ctrl.js"></script>
+  <script src="/scripts/controllers/change-password-ctrl.js"></script>
+  <script src="/scripts/controllers/contact-form-ctrl.js"></script>
+  <script src="/scripts/controllers/edit-services-form-ctrl.js"></script>
+  <script src="/scripts/controllers/docs-ctrl.js"></script>
+  <script src="/scripts/controllers/news-ctrl.js"></script>
+  <script src="/scripts/services/auth-service.js"></script>
+  <script src="/scripts/services/rest-service.js"></script>
+  <script src="/scripts/services/change-password-service.js"></script>
+  <script src="/scripts/services/change-terminal-name-service.js"></script>
+  <script src="/scripts/services/contact-form-service.js"></script>
+  <script src="/scripts/services/edit-services-service.js"></script>
+  <script src="/scripts/services/docs-service.js"></script>
+  <script src="/scripts/services/news-service.js"></script>
+  <script src="/scripts/services/news-service.js"></script>
+  <script src="/scripts/directives/pw-capital-validator.js"></script>
+  <script src="/scripts/directives/pw-length-validator.js"></script>
+  <script src="/scripts/directives/pw-match-validator.js"></script>
+  <script src="/scripts/directives/pw-number-validator.js"></script>
+  <script src="/scripts/directives/pw-special-validator.js"></script>
   <!-- endbuild -->
 </body>
 

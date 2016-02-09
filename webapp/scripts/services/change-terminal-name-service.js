@@ -10,7 +10,7 @@
 angular.module('panelApp')
   .service('changeTerminalNameService', function($http) {
     return function(terminal) {
-      return $http.put('/panel/api/terminals/' + terminal.id + '/name', {
+      return $http.put('/api/terminals/' + terminal.id + '/name', {
         'name': terminal.newName
       });
     };

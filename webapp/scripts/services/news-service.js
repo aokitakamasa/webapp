@@ -9,5 +9,5 @@
  */
 angular.module('panelApp')
   .service('newsService', function($http) {
-    return $http.get('/panel/api/news');
+    return $http.get('/api/news');
   });

@@ -74,6 +74,6 @@ angular
   })
   .service('forgotPasswordService', function($http) {
     return function(userData) {
-      return $http.post('/panel/api/user/forgotPassword ', userData);
+      return $http.post('/api/user/forgotPassword ', userData);
     };
   });

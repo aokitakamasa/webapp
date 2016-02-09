@@ -9,5 +9,5 @@
  */
 angular.module('panelApp')
   .service('restService', function($http) {
-    return $http.get('/panel/api/');
+    return $http.get('/api/all.json');
   });

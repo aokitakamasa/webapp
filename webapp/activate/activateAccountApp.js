@@ -210,23 +210,23 @@ angular
   })
   .service('validateTokenService', function($http) {
     return function(tokenObj) {
-      return $http.post('/panel/api/user/validateToken', tokenObj);
+      return $http.post('/api/user/validateToken', tokenObj);
     };
   })
   .service('activateAccountService', function($http) {
 
-    $http.post('/panel/api/logout').then(function success(resp) {
+    $http.post('/api/logout').then(function success(resp) {
       console.log(resp);
     }, function error(resp) {
       console.log(resp);
     });
 
     return function(userData) {
-      return $http.post('/panel/api/user/consumeToken', userData);
+      return $http.post('/api/user/consumeToken', userData);
     };
   })
   .service('activationConfirmedService', function($http) {
     return function(passwordObj) {
-      return $http.post('/panel/api/user/activationConfirmed', passwordObj);
+      return $http.post('/api/user/activationConfirmed', passwordObj);
     };
   });

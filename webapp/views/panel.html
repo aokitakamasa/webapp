@@ -10,7 +10,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="logo-top-left" href="">
-          <img alt="Ikona m_platform" src="/panel/images/logo-m_platform.png" height="50">
+          <img alt="Ikona m_platform" src="/images/logo-m_platform.png" height="50">
         </a>
       </div>
       <div class="collapse navbar-collapse" id="js-navbar-collapse">
@@ -34,7 +34,7 @@
         <li class="list-group-item" ng-class="{'selected': currentTerminal == terminal}" ng-repeat="terminal in terminals" ng-click="setCurrentTerminal(terminal)">
           <div class="media">
             <div class="media-left">
-              <img class="media-object" src="/panel/images/logo-kasa.png" alt="Ikona kasa" height="50">
+              <img class="media-object" src="/images/logo-kasa.png" alt="Ikona kasa" height="50">
             </div>
             <div class="media-body">
               <h4 class="media-heading">{{ terminal.name}}</h4>
@@ -115,7 +115,7 @@
       <!-- Service details-->
       <div class="details service-details" ng-if="currentService">
         <div ng-if="currentService.service == 'evoucher'">
-          <img src="/panel/images/doladowania.czarny.png" alt="Ikona evoucher" height="100">
+          <img src="/images/doladowania.czarny.png" alt="Ikona evoucher" height="100">
           <h4 class="details-title">Doładowanie eVoucher</h4>
           <p>
             <p>Usluga daje możliwość zakupu doładowań prepaid, w szczególności telefonów komórkowych, w prosty sposób, bez konieczności posiadania kart doładowujących dla między innymi: Simplus, Orange, Play, T-mobile na kartę, Heyah, Halo Polsat, Paysafecard, Mobilking, Telegrosik, Tele24, Telepin, easyCall. Potwierdzeniem zakupu doładowania jest wydruk z kasy fiskalnej, na którym znajduje się kod doładowujący. Usługa doładowań dostarczona jest przez PayTel S.A.</p>
@@ -124,7 +124,7 @@
           </p>
         </div>
         <div ng-if="currentService.service == 'epay'">
-          <img src="/panel/images/platnosc.kartowa.czarny.png" alt="Ikona epay" height="100">
+          <img src="/images/platnosc.kartowa.czarny.png" alt="Ikona epay" height="100">
           <h4 class="details-title">Płatności kartą (ePay)</h4>
           <p>
             <p>Usługa daje użytkownikowi możliwość zapłaty za towary i usługi kartą płatniczą VISA lub MasterCard z wykorzystaniem kasy fiskalnej firmy Novitus lub Elzab ołączonej z PIN-padem bez konieczności posiadania przez sprzedawcę terminala POS. Płatności kartą obsługiwane są przez PayTel S.A.</p>
