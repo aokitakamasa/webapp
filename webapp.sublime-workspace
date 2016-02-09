@@ -1,0 +1,2095 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"remo",
+				"removeItem	(countdown-directive.js)"
+			],
+			[
+				"get",
+				"getItem	(countdown-directive.js)"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"inn",
+				"innerHTML	(countdown.js)"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"repla",
+				"replace"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"foun",
+				"foundPos"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"replace",
+				"replacement"
+			],
+			[
+				"cont",
+				"continue"
+			],
+			[
+				"ex",
+				"excludeFiles"
+			],
+			[
+				"exclude",
+				"excludeFiles"
+			],
+			[
+				"exc",
+				"excludeDirs"
+			],
+			[
+				"pa",
+				"path"
+			],
+			[
+				"excludeFile",
+				"excludeFiles"
+			],
+			[
+				"fil",
+				"files"
+			],
+			[
+				"pus",
+				"push(${0:element1})	Array"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"base",
+				"baseName"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"cons",
+				"console.log('$0');"
+			],
+			[
+				"cl",
+				"console.log('$0');"
+			],
+			[
+				"cd",
+				"console.dir();"
+			],
+			[
+				"readFile",
+				"fs.readFile(path, options, callback_);"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"alph",
+				"alphArr"
+			],
+			[
+				"len",
+				"length	(index.html)"
+			],
+			[
+				"alp",
+				"alpArr"
+			],
+			[
+				"conta",
+				"contactForm"
+			],
+			[
+				"news",
+				"newsService"
+			],
+			[
+				"new",
+				"newsService	(news-service.js)"
+			],
+			[
+				"border",
+				"border-left-color"
+			],
+			[
+				"ser",
+				"serviceName	(index.html)"
+			],
+			[
+				"vertic",
+				"vertical-align"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"posi",
+				"position	(main.less)"
+			],
+			[
+				"acti",
+				"activateAccountForm"
+			],
+			[
+				"err",
+				"errorStatus"
+			],
+			[
+				"ac",
+				"activateSuccess	(activateAccountApp.js)"
+			],
+			[
+				"tokenVa",
+				"tokenValidStatus	(activateAccountApp.js)"
+			],
+			[
+				"tokenValid",
+				"tokenValidStatus"
+			],
+			[
+				"tokenC",
+				"tokenCorrect	(activateAccountApp.js)"
+			],
+			[
+				"$s",
+				"$scope	AngularJS"
+			],
+			[
+				"docs",
+				"docsService"
+			],
+			[
+				"subject",
+				"subjectName"
+			],
+			[
+				"current",
+				"currentChange"
+			],
+			[
+				"togg",
+				"toggledService"
+			],
+			[
+				"qu",
+				"querySelector(${0:selectors})	Element"
+			],
+			[
+				"edit",
+				"editServicesForm"
+			],
+			[
+				"call",
+				"callOtherDomain"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"password",
+				"passwordConfig"
+			],
+			[
+				"reset",
+				"resetForm"
+			],
+			[
+				"contactForm",
+				"contactForm.$invalid"
+			],
+			[
+				"main",
+				"margin	(main.less)"
+			],
+			[
+				"ter",
+				"terminals	(index.html)"
+			],
+			[
+				"$animate",
+				"$animateCss	(animateonload.js)"
+			],
+			[
+				"anima",
+				"animate	(index.html)"
+			],
+			[
+				"form",
+				"formName"
+			],
+			[
+				"model",
+				"modelValue"
+			],
+			[
+				"pwMatch",
+				"pwMatchForm"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"pw",
+				"pwMatchForm"
+			],
+			[
+				"$v",
+				"$viewValue"
+			],
+			[
+				"change",
+				"changePasswordForm"
+			],
+			[
+				"$tem",
+				"$timeout	AngularJS"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"Ma",
+				"MainCtrl	(index.html)"
+			],
+			[
+				"$cs",
+				"$scope	(panelctrl.js)"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"pass",
+				"passwordObj"
+			],
+			[
+				"toke",
+				"tokenObj"
+			],
+			[
+				"userd",
+				"userData"
+			],
+			[
+				"cu",
+				"currentPassword"
+			],
+			[
+				"user",
+				"userPassword"
+			],
+			[
+				"vali",
+				"validateTokenService"
+			],
+			[
+				"ng-plu",
+				"ng-pluralize	AngularJS"
+			],
+			[
+				"moda",
+				"modalElement"
+			],
+			[
+				"termina",
+				"terminal"
+			],
+			[
+				"var",
+				"varTerminal"
+			],
+			[
+				"view",
+				"viewValue"
+			],
+			[
+				"ct",
+				"ctrl.$validators"
+			],
+			[
+				"ng",
+				"ngModel"
+			],
+			[
+				"d",
+				"directive"
+			],
+			[
+				"passw",
+				"passwordConfig"
+			],
+			[
+				"set",
+				"setForm	(index.html)"
+			],
+			[
+				"boo",
+				"bootstrap.min.css"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"bd",
+				"bdc	border-color: #${1:000};"
+			],
+			[
+				"bo",
+				"bold	(bootstrap.css)"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"bdc",
+				"bdc-t	border-color: transparent;"
+			],
+			[
+				"logout",
+				"logoutMsg	(authservice.js)"
+			],
+			[
+				"cookie",
+				"$cookies	AngularJS"
+			],
+			[
+				"out",
+				"outline"
+			],
+			[
+				"curren",
+				"currentTerminal"
+			],
+			[
+				"timeo",
+				"timeout"
+			],
+			[
+				"info",
+				"infoContainer"
+			],
+			[
+				"terminals",
+				"terminalsService	(panelctrl.js)"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"fz",
+				"fz	font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "webapp/login.html",
+			"settings":
+			{
+				"buffer_size": 2424,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webapp/index.html",
+			"settings":
+			{
+				"buffer_size": 33851,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webapp/views/panel.html",
+			"settings":
+			{
+				"buffer_size": 15001,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webapp/login-error.html",
+			"settings":
+			{
+				"buffer_size": 2198,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webapp/activate/activate-account.html",
+			"settings":
+			{
+				"buffer_size": 4856,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webapp/activate/activateAccountApp.js",
+			"settings":
+			{
+				"buffer_size": 7044,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webapp/forgot/forgot-password.html",
+			"settings":
+			{
+				"buffer_size": 3752,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webapp/scripts/services/auth-service.js",
+			"settings":
+			{
+				"buffer_size": 1197,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webapp/styles/panel.less",
+			"settings":
+			{
+				"buffer_size": 6028,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "remo",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"$",
+				":$ - EOF"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				":0",
+				":0 - BOF"
+			],
+			[
+				":",
+				":$ - EOF"
+			],
+			[
+				"insall",
+				"Package Control: Install Package"
+			],
+			[
+				"removepa",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"js",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			]
+		],
+		"width": 469.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/activate"
+	],
+	"file_history":
+	[
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/views/login.html",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/styles/panel.css",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/fonts/MyFontsWebfontsKit.css",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/Gruntfile.js",
+		"/Users/myMac/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/myMac/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/myMac/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/index.html",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/styles/panel.less",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/directives/countdown-directive.js",
+		"/Users/myMac/Library/Application Support/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/Users/myMac/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/myMac/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/styles/main.less",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/controllers/main-ctrl.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/countdown.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/controllers/edit-services-form-ctrl.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/views/panel.html",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/views/preloader.html",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/login.html",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/activate/activate-account.html",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/forgot/forgot-password.html",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/services/rest-service.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/activate/activateAccountApp.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/forgot/forgotPasswordApp.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/services/auth-service.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/services/change-password-service.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/services/change-terminal-name-service.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/services/contact-form-service.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/services/docs-service.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/services/edit-services-service.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/services/news-service.js",
+		"/Volumes/HDD/Downloads/bg_main_title.png",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/.yo-rc.json",
+		"/Users/myMac/Documents/panelServer/replace.js",
+		"/Users/myMac/Documents/panelServer/myapp/app.js",
+		"/Users/myMac/.Trash/routes/api.js",
+		"/Users/myMac/.Trash/app.js",
+		"/Users/myMac/Documents/panelServer/myapp/routes/api.js",
+		"/Users/myMac/Documents/panelServer/myapp/api",
+		"/Users/myMac/Documents/panelServer/myapp/public/all.json",
+		"/Users/myMac/Documents/tmp/public/test/index.html",
+		"/Users/myMac/Documents/tmp/public/tmp.html",
+		"/Volumes/SSD/Users/myMac/Documents/tmp/public/js/tmp.js",
+		"/Users/myMac/Library/Application Support/Karabiner/private.xml",
+		"/Users/myMac/Desktop/test.sh",
+		"/Users/myMac/.Trash/test.command",
+		"/Users/myMac/Documents/panelServer/routes/news.js",
+		"/Volumes/SimCity™4 Deluxe Edition (1.1.0) /README.md",
+		"/Users/myMac/Desktop/test.js",
+		"/Users/myMac/Desktop/text.txt",
+		"/Users/myMac/Documents/panelServer/public/api/news.json",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/controllers/news.js",
+		"/Users/myMac/Documents/panelServer/bin/www",
+		"/Users/myMac/Documents/panelServer/routes/api.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/controllers/docs-ctrl.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/controllers/contact-form-ctrl.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/login-error.html",
+		"/Users/myMac/Documents/panelServer/public/api/user/forgotPassword.js",
+		"/Users/myMac/Documents/panelServer/app.js",
+		"/Users/myMac/Documents/panelServer/routes/forgotPassword.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/styles/main.css",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/bower.json",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/controllers/panel-ctrl.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/test/spec/services/changeterminalnameservice.js",
+		"/Users/myMac/Documents/express/newapp/views/index.jade",
+		"/Users/myMac/Documents/express/newapp/routes/index.js",
+		"/Users/myMac/Documents/express/newapp/app.js",
+		"/Users/myMac/Documents/express/newapp/routes/api.js",
+		"/Users/myMac/Documents/express/newapp/routes/all.json",
+		"/Users/myMac/Documents/express/newapp/public/api/all.json",
+		"/Users/myMac/Documents/tmp/public/js/main.js",
+		"/Users/myMac/Documents/tmp/Gruntfile.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/app.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/test/spec/controllers/changepasswordctrl.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/test/.jshintrc",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/test/karma.conf.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/services/user-service.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/test/spec/services/usernameservice.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/test/spec/controllers/panelctrl.js",
+		"/Volumes/HDD/Downloads/untitled",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/controllers/login-ctrl.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/test/spec/controllers/main-ctrl.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/controllers/change-password-ctrl.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/directives/pw-number-validator.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/directives/pw-special-validator.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/directives/pw-match-validator.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/directives/pw-capital-validator.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/directives/pw-length-validator.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/.bowerrc",
+		"/Users/myMac/Documents/panel/app/scripts/controllers/main-ctrl.js",
+		"/Users/myMac/Documents/panel/app/scripts/controllers/panel-ctrl.js",
+		"/Users/myMac/Documents/panel/app/scripts/services/change-password-service.js",
+		"/Users/myMac/Documents/panel/app/scripts/services/change-terminal-name-service.js",
+		"/Users/myMac/Documents/panel/app/scripts/services/rest-service.js",
+		"/Users/myMac/Documents/panel/app/scripts/services/user-service.js",
+		"/Users/myMac/Documents/panel/.jshintrc",
+		"/Users/myMac/Documents/panel/app/scripts/services/auth-service.js",
+		"/Users/myMac/Documents/panel/test/spec/controllers/login-ctrl.js",
+		"/Users/myMac/Documents/panel/test/spec/controllers/main-ctrl.js",
+		"/Users/myMac/Documents/panel/test/spec/controllers/panel-ctrl.js",
+		"/Users/myMac/Documents/panel/app/scripts/controllers/login-ctrl.js",
+		"/Users/myMac/Documents/panel/app/scripts/controllers/contact-form-ctrl.js",
+		"/Users/myMac/Documents/panel/app/scripts/controllers/change-password-ctrl.js",
+		"/Users/myMac/Documents/panel/test/spec/controllers/contact-form.js",
+		"/Users/myMac/Documents/panel/package.json",
+		"/Users/myMac/Documents/panel/Gruntfile.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/Gruntfile.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/package.json",
+		"/Users/myMac/Documents/Comp/m_platform/panel/Gruntfile.js",
+		"/Users/myMac/Documents/webappDev/app/scripts/directives/animateonload.js",
+		"/Users/myMac/Documents/webappDev/app/index.html",
+		"/Users/myMac/Documents/webappDev/app/scripts/controllers/mainctrl.js",
+		"/Users/myMac/Documents/webappDev/app/styles/main.less",
+		"/Users/myMac/Documents/webappDev/Gruntfile.js",
+		"/Users/myMac/Documents/webappDev/app/scripts/controllers/changepassword.js",
+		"/Users/myMac/Documents/webappDev/app/scripts/directives/pwlength.js",
+		"/Users/myMac/Documents/webappDev/app/scripts/app.js",
+		"/Users/myMac/Documents/webappDev/app/scripts/controllers/panelctrl.js",
+		"/Users/myMac/Documents/webappDev/app/scripts/controllers/contactform.js",
+		"/Users/myMac/Documents/webappDev/app/styles/panel.less",
+		"/Users/myMac/Documents/webappDev/app/scripts/services/restservice.js",
+		"/Users/myMac/Documents/webappDev/app/views/panel.html",
+		"/Users/myMac/Documents/webappDev/package.json",
+		"/Users/myMac/Documents/webappDev/app/views/preloader.html",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/controllers/changepassword.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/scripts/controllers/panelctrl.js",
+		"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/WEB-INF/web.xml"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<open folders>",
+			"",
+			"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/forgot",
+			"",
+			"/Users/myMac/Documents/Comp/m_platform/panel/src/main/webapp/activate",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"info",
+			"block",
+			"/panel/images/logo-m_platform24.png",
+			"<a class=\"logo-top-left\" href=\"\">\n        <img src=\"/panel/images/logo-m_platform24.png\" alt=\"Ikona m_platform\" height=\"26\">\n      </a>",
+			"fileType",
+			"btn-default button-red",
+			"btn-default button-red button-red",
+			"btn-default button-red",
+			"btn-default button-red button-red",
+			"button-red button-red",
+			"Panton-LightItalic",
+			"Panton-Regular",
+			"regular",
+			"j_security",
+			"scripts",
+			"bower_components",
+			"src=\"",
+			"href=\"",
+			"bower_components/",
+			"telefon",
+			"cound",
+			":hover",
+			"res",
+			"countdown",
+			"<div>",
+			"div",
+			"format",
+			"span",
+			"div",
+			"countdownDirective",
+			"logout",
+			"color: @basic_red;",
+			"docs",
+			"Document",
+			"Documents",
+			"../",
+			"./",
+			"../",
+			"relative",
+			"16",
+			"60",
+			"70px",
+			"#f2f2f2",
+			"/panel/",
+			"forgot",
+			"/panel/",
+			"class=\"label-required\"",
+			"style=\"color: red; \"",
+			"30",
+			"style=\"color:red; \"",
+			"*",
+			">\n",
+			"*",
+			"<span style=\"color:red; \">",
+			"red",
+			"* Pole obowiązkowe",
+			"10px",
+			"/panel/images/logo-m_platform24.png",
+			"http://localhost:3000/",
+			"http://localhost:3000/api/",
+			"http://0.0.0.0:3000/",
+			"http://0.0.0.0:3000/api/",
+			"src=\"./",
+			"logo-top",
+			"/panel/api/",
+			"src=\"/panel/",
+			" alt=\"Ikona m_platform\" ",
+			"form-container frame",
+			"form-container",
+			"!=",
+			"\"",
+			"editServicesMessage",
+			"ng-messages",
+			"Wymagane",
+			"terminal-info",
+			"Pole",
+			"*",
+			"* Pole obowiązkowe",
+			"style=\"color:red; \"",
+			"style=\"color: red; \"",
+			"/style=\"color: red; \"/",
+			"/style=\"color: red; \"/,/style=\"color:red; \"/",
+			"style=\"color: red; \" , style=\"color:red; \"",
+			"style=\"color: red; \"",
+			"src=\"/panel/",
+			"/panel/api/",
+			"src=\"/panel/",
+			"req",
+			"style=\"color:red; \"",
+			"style=\"color:red;\"",
+			"./",
+			"i",
+			"console.log",
+			"i",
+			"e",
+			"i",
+			"replaceOccurrences",
+			"uasers",
+			"fixed",
+			"replaceOccurrences",
+			"files",
+			"exclude",
+			"Tmp",
+			"data",
+			"File",
+			"file",
+			"replaceOccurrences",
+			"file",
+			"replaceOccurrences",
+			"data",
+			"file",
+			"•",
+			"files",
+			"ENV_HOME",
+			"VK_OPEN_URL_SHELL_Google_Search",
+			"date_pbcopy",
+			"iTerm",
+			"Calculator",
+			"calculator",
+			"Calculator",
+			"iTerm",
+			"Calculator",
+			"calculator",
+			"Calculator",
+			"VK_OPEN_URL_APP_iTerm",
+			"/Users/myMac/Library/Application",
+			"/Users/myMac/Library/Application Support/Karabiner",
+			"VK_OPEN_URL_SHELL_display_sleep"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<a class=\"logo-top-left\" href=\"/panel/\">\n        <img src=\"/panel/images/logo-m_platform24.png\" alt=\"Ikona m_platform\" height=\"26\">\n      </a>",
+			"button-red",
+			"countdown",
+			"/panel/",
+			"../",
+			"./",
+			"class=\"label-required\"",
+			"26",
+			"class=\"label-required\"",
+			"<span class=\"label-required\">",
+			"/panel/api/",
+			"src=\"/panel/",
+			"http://localhost:3000/api/",
+			"src=\"./",
+			"form-container",
+			"!",
+			"class=\"label-required\"",
+			"src=\"./",
+			"http://0.0.0.0:3000/api/",
+			"src=\"./",
+			"fileName",
+			"border-top-left-transparent",
+			"/panel/",
+			"Typ zgłoszenia",
+			"button-red",
+			"ng-show",
+			"Formularz został wysłany",
+			"Wymagane 9 cyfr",
+			"Wymagane tylko cyfry",
+			"Wymagane",
+			"Twoja wiadomość",
+			"userNameService",
+			"/panel/api/",
+			"main-ctrl.js",
+			"{'minLength': 4, 'minCapital': 1, 'minNumbers': 1, 'minSpecial': 0 }",
+			"activateSuccess",
+			"forgotPasswordFormSubmit",
+			"forgotPasswordService",
+			"@darken_20_red",
+			"@lighten_20_red",
+			":27 GMT+0100 (CET) - Waiting...\n@lighten_20_red",
+			"activateAccountService",
+			"accountActivated",
+			"activateAccountForm",
+			"login",
+			"activateAcountFormSubmit",
+			"class=\"msg-area\"",
+			"user",
+			"btn btn-default button-red",
+			"ContactFormCtrl",
+			"fade-custom",
+			"fade",
+			"ng-show",
+			"logo-kasa",
+			"logo-m_platform"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "webapp/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1993,
+								2295
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 473.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "webapp/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "webapp/views/panel.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "webapp/login-error.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								715,
+								861
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 24.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "webapp/activate/activate-account.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								915,
+								915
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 177.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "webapp/activate/activateAccountApp.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 7044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "webapp/forgot/forgot-password.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3752,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3752,
+								3752
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 934.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "webapp/scripts/services/auth-service.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "webapp/styles/panel.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6027,
+								6027
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5350.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "webapp.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"panel",
+				"webapp/styles/panel.css"
+			],
+			[
+				"auth",
+				"webapp/scripts/services/auth-service.js"
+			],
+			[
+				"main",
+				"main/webapp/scripts/controllers/main-ctrl.js"
+			],
+			[
+				"forgot",
+				"main/webapp/forgot/forgot-password.html"
+			],
+			[
+				"login",
+				"webapp/login.html"
+			],
+			[
+				"login.",
+				"webapp/login.html"
+			],
+			[
+				"index",
+				"main/webapp/index.html"
+			],
+			[
+				"pane",
+				"webapp/styles/panel.less"
+			],
+			[
+				"editservicesformctrl",
+				"webapp/scripts/controllers/edit-services-form-ctrl.js"
+			],
+			[
+				"rest",
+				"webapp/scripts/services/rest-service.js"
+			],
+			[
+				".js",
+				"main/.yo-rc.json"
+			],
+			[
+				"main.less",
+				"main/webapp/styles/main.less"
+			],
+			[
+				"panel.less",
+				"webapp/styles/panel.less"
+			],
+			[
+				"a",
+				"myapp/app.js"
+			],
+			[
+				"tmp.",
+				"tmp/public/tmp.html"
+			],
+			[
+				"docs",
+				"main/webapp/scripts/controllers/docs-ctrl.js"
+			],
+			[
+				"news",
+				"main/webapp/scripts/services/news-service.js"
+			],
+			[
+				"panel.c",
+				"main/webapp/styles/panel.css"
+			],
+			[
+				"res",
+				"main/webapp/scripts/services/rest-service.js"
+			],
+			[
+				"in",
+				"main/webapp/index.html"
+			],
+			[
+				"edits",
+				"main/webapp/scripts/controllers/edit-services-form-ctrl.js"
+			],
+			[
+				"style.",
+				"main/webapp/styles/main.less"
+			],
+			[
+				"panel.css",
+				"main/webapp/styles/panel.css"
+			],
+			[
+				"docsctrl",
+				"main/webapp/scripts/controllers/docs-ctrl.js"
+			],
+			[
+				"contact-form-ctrl",
+				"main/webapp/scripts/controllers/contact-form-ctrl.js"
+			],
+			[
+				"activate",
+				"webapp/activate/activateAccountApp.js"
+			],
+			[
+				"activa",
+				"webapp/activate/activate-account.html"
+			],
+			[
+				"less",
+				"webapp/styles/main.less"
+			],
+			[
+				".less",
+				"webapp/styles/main.less"
+			],
+			[
+				"contact",
+				"webapp/scripts/controllers/contact-form-ctrl.js"
+			],
+			[
+				"change",
+				"webapp/scripts/services/change-terminal-name-service.js"
+			],
+			[
+				"index.html",
+				"tmp/public/index.html"
+			],
+			[
+				"tmp",
+				"public/js/tmp.js"
+			],
+			[
+				"change-ter",
+				"webapp/scripts/services/change-terminal-name-service.js"
+			],
+			[
+				"change-password",
+				"webapp/scripts/controllers/change-password-ctrl.js"
+			],
+			[
+				"app",
+				"webapp/scripts/app.js"
+			],
+			[
+				"panel-c",
+				"webapp/scripts/controllers/panel-ctrl.js"
+			],
+			[
+				"user",
+				"webapp/scripts/services/user-service.js"
+			],
+			[
+				"apnel",
+				"webapp/scripts/controllers/panel-ctrl.js"
+			],
+			[
+				"mai",
+				"webapp/styles/main.less"
+			],
+			[
+				"lo",
+				"webapp/scripts/controllers/login-ctrl.js"
+			],
+			[
+				"main-c",
+				"webapp/scripts/controllers/main-ctrl.js"
+			],
+			[
+				"index.",
+				"webapp/index.html"
+			],
+			[
+				"panelc",
+				"app/scripts/controllers/panelctrl.js"
+			],
+			[
+				"changepassword",
+				"webappDev/app/scripts/controllers/changepassword.js"
+			],
+			[
+				"pre",
+				"app/views/preloader.html"
+			],
+			[
+				"ma",
+				"app/scripts/controllers/mainctrl.js"
+			],
+			[
+				"for",
+				"forgot/forgotPasswordApp.js"
+			],
+			[
+				"",
+				"activate/activateAccountApp.js"
+			],
+			[
+				"act",
+				"activate/activateAccountApp.js"
+			],
+			[
+				"pla",
+				"styles/panel.less"
+			],
+			[
+				"ctrl.js",
+				"scripts/controllers/panelctrl.js"
+			],
+			[
+				"mainc",
+				"scripts/controllers/mainctrl.js"
+			],
+			[
+				"bower",
+				"bower_components/angular/bower.json"
+			],
+			[
+				"views/lo",
+				"views/login.html"
+			],
+			[
+				"user.",
+				"app/scripts/services/user.js"
+			],
+			[
+				"loginc",
+				"app/scripts/controllers/loginctrl.js"
+			],
+			[
+				"bootstra",
+				"webappDev/bower_components/bootstrap/dist/css/bootstrap.css"
+			],
+			[
+				"panelct",
+				"app/scripts/controllers/panelctrl.js"
+			],
+			[
+				"panel.js",
+				"app/scripts/controllers/panelctrl.js"
+			],
+			[
+				"panel.",
+				"test/spec/controllers/panel.js"
+			],
+			[
+				"main.js",
+				"app/scripts/controllers/mainctrl.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

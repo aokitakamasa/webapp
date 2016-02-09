@@ -1,0 +1,312 @@
+<!-- Header -->
+<div id="header" class="header">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="logo-top-left" href="">
+          <img alt="Ikona m_platform" src="/panel/images/logo-m_platform.png" height="50">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/">Home</a></li>
+          <li><a ng-href="#/">About</a></li>
+          <li><a href="" ng-click="logout()">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.Header -->
+<!-- Main -->
+<div class="container">
+  <!-- Terminals/Services -->
+  <div class="row chlds-eq-height">
+    <!-- Terminals -->
+    <div class="terminals frame col-sm-5">
+      <ul class="list-group">
+        <li class="list-group-item" ng-class="{'selected': currentTerminal == terminal}" ng-repeat="terminal in terminals" ng-click="setCurrentTerminal(terminal)">
+          <div class="media">
+            <div class="media-left">
+              <img class="media-object" src="/panel/images/logo-kasa.png" alt="Ikona kasa" height="50">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">{{ terminal.name}}</h4>
+              <h6>{{ terminal.number}}</h6>
+              <h6>
+                <ng-pluralize count="terminal.services.length"
+                  when="{'0': '{} usług',
+                         '2': '{} uslugi',
+                         '3': '{} uslugi',
+                         '4': '{} usługi',
+                         'one': '{} usługa',
+                         'other': '{} usług'}">
+                </ng-pluralize>
+              </h6>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Services -->
+    <div class="services frame col-sm-6 col-sm-offset-1">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Usługa</th>
+            <th>Data rozpoczęcia</th>
+            <th>Data zakończenia</th>
+            <th>Liczba kas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="service in services" ng-click="setCurrentService(service)">
+            <td>{{ service.name }}</td>
+            <td>{{ service.startDate}}</td>
+            <td>{{ service.endDate}}</td>
+            <td>{{ service.terminalCount}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--  -->
+  </div>
+  <!-- Details section-->
+  <div class="row">
+    <div id="detailsContainer" ng-if="currentTerminal || currentService" class="frame col-sm-12 fade-custom">
+      <!-- Terminal details-->
+      <div class="details terminal-details row" ng-if="currentTerminal">
+        <div class="details-header col-sm-12">
+          <h4>{{ currentTerminal.name }}</h4>
+          <h6>{{ currentTerminal.number }}</h6>
+        </div>
+        <div class="terminal-info col-sm-6">
+          <ul>
+            <li>Current terminal services: {{ currentTerminal.services.length }}
+              <ul>
+                <li ng-repeat="service in currentTerminal.services">{{ service }}</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="terminal-actions col-sm-6">
+          <form>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <label>Zmień nazwę kasy</label>
+              </div>
+              <div class="col-xs-7">
+                <input id="change-terminal-name" type="text" class="form-control" placeholder="Nowa nazwa">
+              </div>
+              <div class="col-xs-5">
+                <button type="submit" class="btn button-red">Zapisz</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- /.terminal -->
+      <!-- Service details-->
+      <div class="details service-details" ng-if="currentService">
+        <div ng-if="currentService.service == 'evoucher'">
+          <img src="/panel/images/doladowania.czarny.png" alt="Ikona evoucher" height="100">
+          <h4 class="details-title">Doładowanie eVoucher</h4>
+          <p>
+            <p>Usluga daje możliwość zakupu doładowań prepaid, w szczególności telefonów komórkowych, w prosty sposób, bez konieczności posiadania kart doładowujących dla między innymi: Simplus, Orange, Play, T-mobile na kartę, Heyah, Halo Polsat, Paysafecard, Mobilking, Telegrosik, Tele24, Telepin, easyCall. Potwierdzeniem zakupu doładowania jest wydruk z kasy fiskalnej, na którym znajduje się kod doładowujący. Usługa doładowań dostarczona jest przez PayTel S.A.</p>
+            <p>Kontakt z PayTel S.A. pod numerem telefonu: 801090108</p>
+            <p>+48 18 521 18 00 - dla telefonów komórkowych</p>
+          </p>
+        </div>
+        <div ng-if="currentService.service == 'epay'">
+          <img src="/panel/images/platnosc.kartowa.czarny.png" alt="Ikona epay" height="100">
+          <h4 class="details-title">Płatności kartą (ePay)</h4>
+          <p>
+            <p>Usługa daje użytkownikowi możliwość zapłaty za towary i usługi kartą płatniczą VISA lub MasterCard z wykorzystaniem kasy fiskalnej firmy Novitus lub Elzab ołączonej z PIN-padem bez konieczności posiadania przez sprzedawcę terminala POS. Płatności kartą obsługiwane są przez PayTel S.A.</p>
+            <p>Kontakt z PayTel S.A. pod numerem telefonu: 801090108</p>
+            <p>+48 18 521 18 00 dla telefonów komórkowych </p>
+          </p>
+        </div>
+      </div>
+      <!-- /.service -->
+      <span ng-click="hideDetails()" class="close-cross glyphicon glyphicon-remove"></span>
+    </div>
+  </div>
+  <!-- Info-buttons panel -->
+  <div class="info-buttons row">
+    <div class="col-sm-12 frame">
+      <ul class="nav nav-pills nav-justified">
+        <li><a href="" class="btn button-red">Regulamin</a></li>
+        <li><a href="" class="btn button-red" ng-click="setCurrentInfo('contacts')">Kontakt</a></li>
+        <li><a href="" class="btn button-red" ng-click="setCurrentInfo('faq')">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Info section -->
+  <div class="row">
+    <div id="infoContainer" ng-if="currentInfo" class="frame col-sm-12 fade-custom">
+      <!-- Contact info -->
+      <div class="info info-contacts" ng-if="currentInfo == 'contacts'">
+        <form class="row" name="contactForm" ng-controller="ContactFormCtrl">
+          <h4 class="info-title">Kontakt</h4>
+          <div class="col-sm-5">
+            <div class="row form-group">
+              <div class="col-sm-12">
+                <label>Wybierz kasę</label>
+              </div>
+              <div class="col-sm-12">
+                <select class="form-control" ng-model="contactFormData.terminal">
+                  <option value="" selected>Nie powiązane z kasą</option>
+                  <option ng-repeat="terminal in terminals">{{ terminal.number }}</option>
+                  <option>Wszystkie kasy</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-sm-offset-2">
+            <div class="row form-group">
+              <div class="col-sm-12">
+                <label>Wybierz usługę</label>
+              </div>
+              <div class="col-sm-12">
+                <select class="form-control" ng-model="contactFormData.service">
+                  <option value="" selected>Nie powiązane z usługą</option>
+                  <option ng-repeat="service in services">{{ service.name }}</option>
+                  <option>Wszystkie usługi</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>Type your message</label>
+              <textarea class="form-control" rows="5" ng-model="contactFormData.message" name="contactFormDataMessage" id="contactFormDataMessage" required></textarea>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="row form-group">
+              <div class="col-sm-12">
+                <label>Email</label>
+              </div>
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="" ng-model="user.data.email" readonly>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-sm-offset-2">
+            <div class="row form-group">
+              <div class="col-sm-12">
+                <label>Telefon</label>
+              </div>
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="" ng-model="user.data.phone" readonly>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="button-group pull-right">
+              <div ng-click="resetContactForm()" type="reset" class="btn button-red">Anuluj</div>
+              <div ng-click="submitContactForm(contactFormData)" ng-disabled="contactForm.$invalid" type="submit" class="btn button-red">Wyślij</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Faq info -->
+      <div class="info info-faq" ng-if="currentInfo == 'faq'">
+        <h4 class="info-title">FAQ</h4>
+        <ul>
+          <li>
+            <h5>Modem</h5>
+            <ul>
+              <li>Parametryzacja modemu M/Platform nieudana – błąd klucza
+                <ul>
+                  <li>Prosimy o kontakt na numer helpdesk M/Platform 22 290 70 10</li>
+                </ul>
+              </li>
+              <li>Parametryzacja modemu M/Platform nieprawidłowy parametr funkcji
+                <ul>
+                  <li>Prosimy o kontakt na numer helpdesk M/Platform 22 290 70 10</li>
+                </ul>
+              </li>
+              <li>Nie można wejść w menu modemu M/Platform – lampka na modemie świeci na zielono
+                <ul>
+                  <li>Proszę wykonać restart modemu. W tym celu należy odłączyć modem od zasilania, zaczekać aż wszystkie lampki sygnalizujące zgasną, odczekać 5 sekund i ponownie podłączyć zasilanie. W razie nierozwiązania problemu Prosimy o kontakt na numer helpdesk M/Platform 22 290 70 10
+                  </li>
+                </ul>
+              </li>
+              <li>Nie można wejść w menu modemu M/Platform – miga pomarańczowa lampka na modemie
+                <ul>
+                  <li>Proszę wykonać restart modemu. W tym celu należy odłączyć modem od zasilania, zaczekać aż wszystkie lampki sygnalizujące zgasną, odczekać 5 sekund i ponownie podłączyć zasilanie. W razie nierozwiązania problemu Prosimy o kontakt na numer helpdesk M/Platform 22 290 70 10</li>
+                </ul>
+              </li>
+              <li>Utrata zasilania w placówce
+                <ul>
+                  <li>Utrata zasilania spowoduje wyłączenie się modemu. Usługi nie będą dostępne, dopóki modem nie zostanie podłączony do zasilania. Kasa będzie działała na aku</li>
+                </ul>
+              </li>
+              <li>Odłączenie modemu M/platform od kasy fiskalnej i PinPada.
+                <ul>
+                  <li>W przypadku rozłączenia modemu, należy odłączyć modem od zasilania, podłączyć do niego kasę i PinPad. Na końcu ponownie podłączyć zasilanie do modemu.
+                  </li>
+                </ul>
+              </li>
+              <li>Wyłączenie kasy przy nie wyłączonym modemie M/platform.
+                <ul>
+                  <li>Do prawidłowego działa modemu M/platform ważne jest, aby w pierwszej kolejności włączana była kasa fiskalna, dopiero później modem M/platform. W przypadku włączanie modemu jako pierwszego przed kasą, niezbędny jest restart modemu.</li>
+                </ul>
+              </li>
+              <li>Aktywowana usługa nie jest dostępna
+                <ul>
+                  <li>Proszę wykonać restart modemu z poziomu kasy. W tym celu wchodzimy w menu modemu M/Platform i wybieramy opcję restart. Jeżeli po restarcie usługa nadal nie jest dostępna, prosimy o kontakt na numer helpdesk M/Platform 22 290 70 10</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h5>Usługi</h5>
+            <ul>
+              <li>Drukuje się paragon na doładowanie eVoucher ale nie drukuje się kod doładowania. Na Paragonie widnieje informacja „Błąd doładowania – Product not found”
+                <ul>
+                  <li>Podane doładowanie jest niedostępne dla danego operatora. Należy wybrać inną kwotę doładowania. Wydrukowany paragon dołączamy ewidencji zwrotów towarów i reklamacji oraz pomyłek na kasie fiskalnej. </li>
+                </ul>
+              </li>
+              <li>Drukuje się paragon na doładowanie eVoucher ale nie drukuje się kod doładowania.
+                <ul>
+                  <li>
+                    Należy wprowadzić w menu modemu M/Platform numer PLU dla kodu doładowania. W tym celu wchodzimy w menu modemu wybieramy usługę eVoucher, następnie opcję kod doładowania i wpisujemy numer pod którym doładowanie widnieje w bazie produktów na kasie fiskalnej.
+                  </li>
+                </ul>
+              </li>
+              <li>Przy płatności alternatywnej ePay po użyciu karty płatniczej widnieje błąd „”Błąd transakcji”.
+                <ul>
+                  <li>Błąd transakcji może być spowodowany błędnym pinem, brakiem środków na koncie klienta lub przeterminowaną kartą płatniczą. Jeżeli zostaną wykluczone wcześniejsze opcje najprawdopodobniej wystąpił błąd połączenia. W takim wypadku prosimy o kontakt na numer helpdesk M/Platform 22 290 70 10</li>
+                </ul>
+              </li>
+              <li>Przy płatności alternatywnej ePay po użyciu karty płatniczej odłączony zostaje PinPad
+                <ul>
+                  <li>Transakcja zostanie anulowana. Po ponownym podłączeniu PinPad można ponownie dokonać transakcji kartą.</li>
+                </ul>
+              </li>
+              <li>Przy płatności alternatywnej BLIK po wprowadzeniu tokena widnieje błąd „Payment declined”.
+                <ul>
+                  <li>Ponów próbę z użyciem nowego tokena. Jeżeli nowo wygenerowany token także nie działa, możliwe że klient nie ma środków na koncie. Jeżeli wykluczona zostanie opcja braku środków, najprawdopodobniej wystąpił błąd połączenia. W takim wypadku prosimy o kontakt na numer helpdesk M/Platform 22 290 70 10</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--  -->
+      <span ng-click="hideInfo()" class="close-cross glyphicon glyphicon-remove"></span>
+    </div>
+  </div>
+  <!--  -->
+</div>
+<!-- /.Main -->

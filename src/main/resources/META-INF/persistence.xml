@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+    <persistence-unit name="panel" transaction-type="JTA">
+        <jta-data-source>java:/postgresql/panelDS</jta-data-source>
+        <class>pl.com.comp.peopay.model.access.Group</class>
+        <class>pl.com.comp.peopay.model.core.Merchant</class>
+        <class>pl.com.comp.peopay.model.access.Region</class>
+        <class>pl.com.comp.peopay.model.dictionaries.CommonType</class>
+        <class>pl.com.comp.peopay.model.dictionaries.Common</class>
+        <class>pl.com.comp.peopay.model.access.User</class>
+        <class>pl.com.comp.peopay.model.access.UserToken</class>
+        <class>pl.com.comp.peopay.model.configuration.UserConfig</class>
+        <class>pl.com.comp.peopay.model.core.Address</class>
+        <class>pl.com.comp.peopay.model.access.UserRegion</class>
+        <class>pl.com.comp.peopay.model.access.Role</class>
+        <class>pl.com.comp.peopay.model.access.UserService</class>
+        <class>pl.com.comp.peopay.model.dictionaries.Service</class>
+        <class>pl.com.comp.peopay.model.core.File</class>
+        <class>pl.com.comp.peopay.model.core.News</class>
+        <class>pl.com.comp.peopay.model.dictionaries.State</class>
+        <class>pl.com.comp.peopay.model.dictionaries.Company</class>
+        <class>pl.com.comp.peopay.model.core.Agreement</class>
+        <class>pl.com.comp.peopay.model.core.Dealer</class>
+        <class>pl.com.comp.peopay.model.core.MerchantParam</class>
+        <class>pl.com.comp.peopay.model.core.MerchantService</class>
+        <class>pl.com.comp.peopay.model.core.TerminalDealer</class>
+        <class>pl.com.comp.peopay.model.core.Terminal</class>
+        <class>pl.com.comp.peopay.model.dictionaries.TaxOffice</class>
+        <class>pl.com.comp.peopay.model.core.FileVersion</class>
+        <class>pl.com.comp.peopay.model.core.TerminalService</class>
+        <class>pl.com.comp.peopay.model.access.RolePriv</class>
+        <class>pl.com.comp.peopay.model.access.Priv</class>
+        <class>pl.com.comp.peopay.model.access.PrivType</class>
+        <class>pl.com.comp.peopay.model.core.Shareholder</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.transaction.flush_before_completion" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="cpd" transaction-type="JTA">
+        <jta-data-source>java:/postgresql/cpdDS</jta-data-source>
+        <class>pl.com.comp.peopay.modelcpd.EvoucherTransaction</class>
+        <class>pl.com.comp.peopay.modelcpd.PspTransactionHistory</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.transaction.flush_before_completion" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>
