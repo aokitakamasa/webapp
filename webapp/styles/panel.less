@@ -185,9 +185,9 @@ body
 
 .close
 {
-    font-size: 30px;
+    font-size: 2rem;
 
-    opacity: 1;
+    opacity: 1 !important;
     color: @basic_red !important;
 }
 
@@ -408,6 +408,7 @@ input
     & > ul
     {
         margin-bottom: 20px;
+        padding-left: 20px;
     }
     li ul li
     {
@@ -454,8 +455,8 @@ input
 
 .info-section
 {
-    font-size: 16px;
-    line-height: 1.5em;
+    font-size: 1rem;
+    line-height: 1.5rem;
 
     position: absolute;
     top: 0;
@@ -466,4 +467,17 @@ input
 .info-section-title
 {
     padding: 0 0 52px 0;
+}
+.info-faq
+{
+    & ul
+    {
+        padding-left: 20px;
+        line-height: 2rem;
+    }
+}
+.services {
+  & th {
+    font-size: 0.9rem;
+  }
 }
