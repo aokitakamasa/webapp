@@ -127,7 +127,8 @@ module.exports = function (grunt) {
       development: {
         files: {
           'webapp/styles/main.css': 'webapp/styles/main.less',
-          'webapp/styles/panel.css': 'webapp/styles/panel.less'
+          'webapp/styles/panel.css': 'webapp/styles/panel.less',
+          'webapp/styles/login.css': 'webapp/styles/login.less'
         },
         sourceMap: false
       }
