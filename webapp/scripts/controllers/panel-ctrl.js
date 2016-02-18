@@ -11,83 +11,90 @@ angular.module('panelApp')
   .controller('PanelCtrl', function($scope, $rootScope, $location, $anchorScroll, $timeout, restService, changeTerminalNameService) {
     // Variables
     //
-    $scope.merchant = null;
-    $scope.terminals = null;
-    $scope.services = null;
+    var vm = this;
+    vm.merchant = null;
+    vm.terminals = null;
+    vm.services = null;
 
     restService.then(function success(resp) {
-      $scope.terminals = resp.data.terminals;
-      $scope.services = resp.data.services;
-      $scope.merchant = resp.data.merchant;
+      vm.terminals = resp.data.terminals;
+      vm.services = resp.data.services;
+      vm.merchant = resp.data.merchant;
       $scope.main.loading = false;
     }, function error(resp) {
       console.log(resp.data);
     });
 
 
-    $scope.currentTerminal = null;
-    $scope.currentService = null;
+    vm.currentTerminal = null;
+    vm.currentService = null;
 
-    $scope.currentInfo = null;
+    vm.currentInfo = null;
+    // vm.currentInfo = 'editServices';
 
-    $scope.setCurrentTerminal = setCurrentTerminal;
-    $scope.setCurrentService = setCurrentService;
-    $scope.setCurrentInfo = setCurrentInfo;
+    vm.setCurrentTerminal = setCurrentTerminal;
+    vm.setCurrentService = setCurrentService;
+    vm.setCurrentInfo = setCurrentInfo;
 
-    $scope.hideDetails = hideDetails;
-    $scope.hideInfo = hideInfo;
+    vm.hideDetails = hideDetails;
+    vm.hideInfo = hideInfo;
 
-    $scope.terminalNameChanged = false;
-    $scope.changeTerminalName = changeTerminalName;
+    vm.terminalNameChanged = false;
+    vm.changeTerminalName = changeTerminalName;
 
-    $scope.getFullServiceName = getFullServiceName;
+    vm.getFullServiceName = getFullServiceName;
+    vm.scrollTo = scrollTo;
 
     // Methods
     //
     function setCurrentTerminal(terminal) {
-      $scope.currentService = null;
-      $scope.currentTerminal = terminal;
+      vm.currentService = null;
+      if (typeof terminal === 'string') {
+        terminal = JSON.parse(terminal);
+      }
+      vm.currentTerminal = terminal;
+      console.log(vm.currentTerminal);
       scrollTo('detailsContainer');
     }
 
     function setCurrentService(service) {
-      $scope.currentTerminal = null;
-      $scope.currentService = service;
+      vm.currentTerminal = null;
+      vm.currentService = service;
       scrollTo('detailsContainer');
     }
 
     function setCurrentInfo(subject) {
-      $scope.currentInfo = subject;
+      vm.currentInfo = subject;
       scrollTo('infoContainer');
     }
 
     function hideDetails() {
-      $scope.currentTerminal = null;
-      $scope.currentService = null;
+      vm.currentTerminal = null;
+      vm.currentService = null;
     }
 
     function hideInfo() {
-      $scope.currentInfo = null;
+      vm.currentInfo = null;
     }
 
     function changeTerminalName(name) {
 
       var terminalObj = {
-        id: $scope.currentTerminal.id,
+        id: vm.currentTerminal.id,
         newName: name
       };
 
       changeTerminalNameService(terminalObj).then(function success(resp) {
         if (resp.status === 204) {
-          for (var i = 0, len = $scope.terminals.length; i < len; i++) {
-            if ($scope.terminals[i].id === terminalObj.id) {
-              $scope.terminals[i].name = terminalObj.newName;
+          for (var i = 0, len = vm.terminals.length; i < len; i++) {
+            if (vm.terminals[i].id === terminalObj.id) {
+              vm.terminals[i].name = terminalObj.newName;
             }
           }
-          $scope.terminalNameChanged = true;
+          vm.terminalNameChanged = true;
 
           $timeout(function() {
-            $scope.terminalNameChanged = false;
+            vm.terminalNameChanged = false;
             document.querySelector('[name="newTerminalName"]').value = null;
           }, 3000);
         }
@@ -97,9 +104,9 @@ angular.module('panelApp')
     }
 
     function getFullServiceName(service) {
-      for (var i = 0; i < $scope.services.length; i++) {
-        if ($scope.services[i].service === service) {
-          return $scope.services[i].name;
+      for (var i = 0; i < vm.services.length; i++) {
+        if (vm.services[i].service === service) {
+          return vm.services[i].name;
         }
       }
     }

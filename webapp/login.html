@@ -16,9 +16,8 @@
   <div class="bg-pad"></div>
   <div id="header" class="header">
     <div class="container">
-      <a class="logo-top-left" href="">
-        <img src="/
-images/logo-m_platform24.png" alt="Ikona m_platform" height="26">
+      <a class="logo-top-left" href="#">
+        <img src="/images/logo-m_platform24.png" alt="Ikona m_platform" height="26">
       </a>
       <a class="logo-top-right hidden-xs" href="http://mplatform.com.pl/">Powrót na stronę główną</a>
     </div>
@@ -31,14 +30,14 @@ images/logo-m_platform24.png" alt="Ikona m_platform" height="26">
       <div class="form-body clearfix">
         <form class="form-login" action="/panel/j_security_check" method="post" name="loginForm">
           <div class="form-group">
-            <input type="text" name="j_username" class="form-control" placeholder="Login" required autofocus/>
+            <input type="text" name="j_username" id="login" class="form-control" placeholder="Login" required autofocus="true" />
           </div>
           <div class="form-group">
-            <input type="password" class="form-control" placeholder="Hasło" name="j_password" required/>
+            <input type="password" class="form-control" placeholder="Hasło" name="j_password" required="true" />
           </div>
           <div class="form-group pull-right">
             <label>Pamiętaj mnie</label>
-            <input type="checkbox" ng-model="userData.remember" name="remember">
+            <input type="checkbox" id="remember_me" name="remember">
           </div>
           <div class="form-group">
             <button class="btn button-red btn-block" type="submit">Zaloguj</button>
@@ -50,8 +49,7 @@ images/logo-m_platform24.png" alt="Ikona m_platform" height="26">
       </div>
       <div class="info-section limiter hidden-sm hidden-xs">
         <span>
-            Jeżeli masz problem z logowaniem lub przypomnieniem hasła
-skontaktuj się z naszym działem obsługi klienta:
+            Jeżeli masz problem z logowaniem lub przypomnieniem hasła skontaktuj się z naszym działem obsługi klienta:
             <br>
             T: +48 22 290 70 10
             <br>
@@ -62,6 +60,7 @@ skontaktuj się z naszym działem obsługi klienta:
   </div>
   <!-- scripts -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/scripts/etc/remember-me.js"></script>
 </body>
 
 </html>

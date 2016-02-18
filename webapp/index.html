@@ -28,7 +28,7 @@
     <img class="wheel" src="/images/ajax_loader_gray_64.gif" alt="Preloader">
   </div>
   <!-- /.preloader -->
-  <div id="panel" ng-controller="PanelCtrl" ng-hide="main.loading" class="animate-custom">
+  <div id="panel" ng-controller="PanelCtrl as panel" ng-hide="main.loading" class="animate-custom">
     <!-- Header -->
     <div id="header" class="header">
       <div class="navbar navbar-default" role="navigation">
@@ -40,7 +40,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="logo-top-left" href="">
+            <a class="logo-top-left" href="#">
               <img alt="Ikona m_platform" src="/images/logo-m_platform24.png" height="26">
             </a>
           </div>
@@ -50,14 +50,14 @@
                 <div class="phone"><span class="label-required">helpdesk:</span> <sup>T:</sup> 22 290 70 10</div>
               </li>
               <li class="dropdown">
-                <a href="" data-toggle="dropdown">
+                <a href="#" data-toggle="dropdown">
                   <span class="glyphicon glyphicon-user"></span>
                   <span>{{ merchant.login }}</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="" data-toggle="modal" data-target="#cahngePasswordModal">Zmień hasło</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#cahngePasswordModal">Zmień hasło</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="" ng-click="main.logout()">Wyloguj</a></li>
+                  <li><a href="#" ng-click="main.logout()">Wyloguj</a></li>
                 </ul>
               </li>
             </ul>
@@ -137,7 +137,7 @@
         <!-- Terminals -->
         <div class="terminals frame col-sm-5">
           <ul class="list-group">
-            <li class="list-group-item" ng-class="{'selected': currentTerminal == terminal}" ng-repeat="terminal in terminals" ng-click="setCurrentTerminal(terminal)">
+            <li class="list-group-item" ng-class="{'selected': panel.currentTerminal == terminal}" ng-repeat="terminal in panel.terminals" ng-click="panel.setCurrentTerminal(terminal)">
               <div class="media">
                 <div class="media-left">
                   <img class="media-object" src="/images/logo-kasa.png" alt="Ikona kasa" height="50">
@@ -176,7 +176,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr ng-repeat="service in services" ng-click="setCurrentService(service)">
+              <tr ng-repeat="service in panel.services" ng-click="panel.setCurrentService(service)">
                 <td>{{ service.name }}</td>
                 <td>{{ service.startDate}}</td>
                 <td>{{ service.endDate}}</td>
@@ -184,25 +184,25 @@
               </tr>
             </tbody>
           </table>
-          <button ng-click="setCurrentInfo('editServices')" type="button" class="btn btn-default pull-right">Zarządzaj usługami</button>
+          <button ng-click="panel.setCurrentInfo('editServices')" type="button" class="btn btn-default pull-right">Zarządzaj usługami</button>
         </div>
         <!--  -->
       </div>
       <!-- Details section-->
       <div class="row">
-        <div id="detailsContainer" ng-if="currentTerminal || currentService" class="frame col-sm-12 fade-custom">
+        <div id="detailsContainer" ng-if="panel.currentTerminal || panel.currentService" class="frame col-sm-12 fade-custom">
           <!-- Terminal details-->
-          <div class="details terminal-details row" ng-if="currentTerminal">
+          <div class="details terminal-details row" ng-if="panel.currentTerminal">
             <div class="col-sm-12">
               <div class="details-header">
-                <h4 class="terminal-name">{{ currentTerminal.name }}</h4>
-                <h6 class="text-muted">{{ currentTerminal.number }}</h6></div>
+                <h4 class="terminal-name">{{ panel.currentTerminal.name }}</h4>
+                <h6 class="text-muted">{{ panel.currentTerminal.number }}</h6></div>
             </div>
             <div class="terminal-info col-sm-6">
               <ul>
-                <li>Aktywne usługi na terminalu: {{ currentTerminal.services.length }}
+                <li>Aktywne usługi na terminalu: {{ panel.currentTerminal.services.length }}
                   <ul>
-                    <li ng-repeat="service in currentTerminal.services">{{ getFullServiceName(service) }}</li>
+                    <li ng-repeat="service in panel.currentTerminal.services">{{ panel.getFullServiceName(service) }}</li>
                   </ul>
                 </li>
               </ul>
@@ -215,10 +215,10 @@
                     </label>
                   </div>
                   <div class="col-xs-7">
-                    <input ng-model="newTerminalName" name="newTerminalName" type="text" class="form-control" placeholder="{{ currentTerminal.name }}" ng-maxlength="50" required>
+                    <input ng-model="newTerminalName" name="newTerminalName" type="text" class="form-control" placeholder="{{ panel.currentTerminal.name }}" ng-maxlength="50" required>
                   </div>
                   <div class="col-xs-5">
-                    <button type="submit" class="btn button-red" ng-click="changeTerminalName(newTerminalName)" ng-disabled="changeTerminalNameForm.$invalid">Zapisz</button>
+                    <button type="submit" class="btn button-red" ng-click="panel.changeTerminalName(newTerminalName)" ng-disabled="changeTerminalNameForm.$invalid">Zapisz</button>
                   </div>
                 </div>
               </form>
@@ -233,8 +233,8 @@
           </div>
           <!-- /.terminal -->
           <!-- Service details-->
-          <div class="details service-details" ng-if="currentService">
-            <div ng-if="currentService.service == 'evoucher'">
+          <div class="details service-details" ng-if="panel.currentService">
+            <div ng-if="panel.currentService.service == 'evoucher'">
               <img src="/images/doladowania.czarny.png" alt="Ikona evoucher" height="100">
               <h4 class="details-title">Doładowanie eVoucher</h4>
               <p>
@@ -243,7 +243,7 @@
                 <p>+48 18 521 18 00 - dla telefonów komórkowych</p>
               </p>
             </div>
-            <div ng-if="currentService.service == 'epay'">
+            <div ng-if="panel.currentService.service == 'epay'">
               <img src="/images/platnosc.kartowa.czarny.png" alt="Ikona epay" height="100">
               <h4 class="details-title">Płatności kartą (ePay)</h4>
               <p>
@@ -254,35 +254,36 @@
             </div>
           </div>
           <!-- /.service -->
-          <span ng-click="hideDetails()" class="close-cross glyphicon glyphicon-remove"></span>
+          <span ng-click="panel.hideDetails()" class="close-cross glyphicon glyphicon-remove"></span>
         </div>
       </div>
       <!-- Info-buttons panel -->
       <div class="info-buttons row">
         <div class="col-sm-12 frame">
           <ul class="nav nav-pills nav-justified">
-            <li><a href="/rules.html" target="_blank" class="btn button-red">Regulamin</a></li>
-            <li><a href="" class="btn button-red" ng-click="setCurrentInfo('contacts')">Kontakt</a></li>
-            <li><a href="" class="btn button-red" ng-click="setCurrentInfo('faq')">FAQ</a></li>
-            <li><a href="" class="btn button-red" ng-click="setCurrentInfo('docs')">Dokumenty</a></li>
-            <li><a href="" class="btn button-red" ng-click="setCurrentInfo('news')">Aktualności</a></li>
+            <li><a href="/pdf/regulamin_m_platform.pdf" target="_blank" class="btn button-red">Regulamin</a></li>
+            <li><a href="" class="btn button-red" ng-click="panel.setCurrentInfo('contacts')">Kontakt</a></li>
+            <li><a href="" class="btn button-red" ng-click="panel.setCurrentInfo('faq')">FAQ</a></li>
+            <li><a href="" class="btn button-red" ng-click="panel.setCurrentInfo('docs')">Dokumenty</a></li>
+            <li><a href="" class="btn button-red" ng-click="panel.setCurrentInfo('news')">Aktualności</a></li>
           </ul>
         </div>
       </div>
       <!-- Info section -->
       <div class="row">
-        <div id="infoContainer" ng-if="currentInfo" class="frame col-sm-12 fade-custom">
+        <div id="infoContainer" ng-if="panel.currentInfo" class="frame col-sm-12 fade-custom">
           <!-- Edit-services info -->
-          <div class="info info-edit-services" ng-if="currentInfo == 'editServices'" ng-controller="EditServicesFormCtrl">
+          <div class="info info-edit-services" ng-if="panel.currentInfo == 'editServices'" ng-controller="EditServicesFormCtrl as editServicesCtrl">
             <h4 class="info-title">Zarządzaj usługami</h4>
-            <form class="row" name="editServicesForm" ng-if="!editServicesFormSubmitted">
+            <form class="row" name="editServicesForm" ng-if="!editServicesCtrl.editServicesFormSubmitted">
               <div class="col-sm-12">
-                <table id="editServicesTable" class="table table-bordered table-hover">
+                <!-- large screens -->
+                <table id="editServicesTable" class="table table-bordered table-hover hidden-sm hidden-xs">
                   <tr>
                     <td class="border-top-left-transparent">
                       Edit services on your terminals.
                     </td>
-                    <td ng-repeat="terminal in terminals">
+                    <td ng-repeat="terminal in editServicesCtrl.terminals">
                       <div class="media">
                         <div class="media-left">
                           <img class="media-object hidden-xs" src="/images/logo-kasa.png" alt="Ikona kasa" height="50">
@@ -294,18 +295,42 @@
                       </div>
                     </td>
                   </tr>
-                  <tr ng-repeat="service in services">
+                  <tr ng-repeat="service in editServicesCtrl.services">
                     <td class="service-name">
                       <span>{{service.name}}</span>
                     </td>
-                    <td ng-repeat="terminal in terminals">
+                    <td ng-repeat="terminal in editServicesCtrl.terminals">
                       <!-- .checkbox-custom -->
-                      <div class="checkbox-custom" ng-class="{'on': checkServices(terminal, service)}">
-                        <input type="checkbox" id="{{terminal.id + service.service}}" name="checkBox" ng-click="toggleService($event, terminal)" ng-checked="checkServices(terminal, service)" type="checkbox" data-service="{{service.service}}" />
+                      <div class="checkbox-custom" ng-class="{'on': editServicesCtrl.checkServices(terminal, service)}">
+                        <input type="checkbox" id="{{terminal.id + service.service}}" name="checkBox" ng-click="editServicesCtrl.toggleService($event, terminal)" ng-checked="editServicesCtrl.checkServices(terminal, service)" type="checkbox" data-service="{{service.service}}" />
                         <label for="{{terminal.id + service.service}}"></label>
                       </div>
                       <!-- end .checkbox-custom -->
-                      <!--                       <input ng-click="toggleService($event, terminal)" ng-checked="checkServices(terminal, service)" type="checkbox" data-service="{{service.service}}"> -->
+                      <!--                       <input ng-click="editServicesCtrl.toggleService($event, terminal)" ng-checked="editServicesCtrl.checkServices(terminal, service)" type="checkbox" data-service="{{service.service}}"> -->
+                    </td>
+                  </tr>
+                </table>
+                <!-- small screens -->
+                <table id="editServicesTable-sm" class="table table-bordered table-hover hidden-lg">
+                  <tr>
+                    <td colspan=2>
+                      <select class="terminal-selector" ng-model="terminalNumber" ng-change="editServicesCtrl.setCurrentEditTerminalByNumber(terminalNumber)">
+                        <option value="" disabled selected>Wyberz kasę</option>
+                        <option value="{{terminal.number}}" ng-repeat="terminal in panel.terminals">{{terminal.name}} {{terminal.number}}
+                        </option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr ng-repeat="service in panel.services">
+                    <td class="service-name">
+                      <span>{{service.name}}</span>
+                    </td>
+                    <td>
+                      <!-- .checkbox-custom -->
+                      <div class="checkbox-custom" ng-class="{'on': editServicesCtrl.checkServices(editServicesCtrl.currentEditTerminal, service)}">
+                        <input type="checkbox" id="{{editServicesCtrl.currentEditTerminal.id + service.service + 'sm'}}" name="checkBox" ng-click="editServicesCtrl.toggleService($event, editServicesCtrl.currentEditTerminal)" ng-checked="editServicesCtrl.checkServices(editServicesCtrl.currentEditTerminal, service)" type="checkbox" data-service="{{service.service}}" />
+                        <label for="{{editServicesCtrl.currentEditTerminal.id + service.service + 'sm'}}"></label>
+                      </div>
                     </td>
                   </tr>
                 </table>
@@ -313,7 +338,7 @@
               <div class="col-sm-12">
                 <div class="form-group">
                   <label>Twoja wiadomość</label>
-                  <textarea class="form-control" rows="5" id="editServicesMessage" name="message" ng-model="editServicesMessage" required></textarea>
+                  <textarea class="form-control" rows="5" id="editServicesMessage" name="message" ng-model="editServicesCtrl.editServicesMessage" required></textarea>
                 </div>
                 <!-- msg area -->
                 <div ng-messages="editServicesForm.message.$error" class="msg-area" role="alert">
@@ -323,17 +348,17 @@
               </div>
               <div class="col-sm-12">
                 <div class="button-group pull-right">
-                  <button ng-click="resetEditServicesForm()" type="reset" class="btn btn-default">Anuluj</button>
-                  <button ng-click="submitEditServicesForm(editServicesMessage)" ng-disabled="editServicesForm.$invalid" type="submit" class="btn button-red">Wyślij</button>
+                  <button ng-click="editServicesCtrl.resetEditServicesForm()" type="reset" class="btn btn-default">Anuluj</button>
+                  <button ng-click="editServicesCtrl.submitEditServicesForm(editServicesCtrl.editServicesMessage)" ng-disabled="editServicesForm.$invalid" type="submit" class="btn button-red">Wyślij</button>
                 </div>
               </div>
             </form>
             <!-- msg-area -->
-            <div class="fade-custom" ng-if="editServicesFormSubmitted">Formularz został wysłany</div>
+            <div class="fade-custom" ng-if="editServicesCtrl.editServicesFormSubmitted">Formularz został wysłany</div>
             <!-- /.msg-area -->
           </div>
           <!-- Contact info -->
-          <div class="info info-contacts" ng-if="currentInfo == 'contacts'" ng-controller="ContactFormCtrl">
+          <div class="info info-contacts" ng-if="panel.currentInfo == 'contacts'" ng-controller="ContactFormCtrl">
             <h4 class="info-title">Kontakt</h4>
             <form class="row" name="contactForm" ng-if="!contactFormSubmitted">
               <div class="col-sm-4">
@@ -358,7 +383,7 @@
                   <div class="col-sm-12">
                     <select class="form-control" ng-model="contactFormData.terminal">
                       <option value="" selected>Nie powiązane z kasą</option>
-                      <option ng-repeat="terminal in terminals">{{ terminal.number }}</option>
+                      <option ng-repeat="terminal in panel.terminals">{{ terminal.number }}</option>
                       <option>Wszystkie kasy</option>
                     </select>
                   </div>
@@ -372,7 +397,7 @@
                   <div class="col-sm-12">
                     <select class="form-control" ng-model="contactFormData.service">
                       <option value="" selected>Nie powiązane z usługą</option>
-                      <option ng-repeat="service in services">{{ service.name }}</option>
+                      <option ng-repeat="service in panel.services">{{ service.name }}</option>
                     </select>
                   </div>
                 </div>
@@ -430,7 +455,7 @@
             <!-- /.msg-area -->
           </div>
           <!-- Faq info -->
-          <div class="info info-faq" ng-if="currentInfo == 'faq'">
+          <div class="info info-faq" ng-if="panel.currentInfo == 'faq'">
             <h4 class="info-title">FAQ</h4>
             <ul>
               <li>
@@ -517,7 +542,7 @@
             </ul>
           </div>
           <!-- Docs info -->
-          <div class="info info-docs" ng-if="currentInfo == 'docs'">
+          <div class="info info-docs" ng-if="panel.currentInfo == 'docs'">
             <h4 class="info-title">Dokumenty</h4>
             <div ng-controller="DocsCtrl as docs" class="docs-table-container">
               <!-- preloader -->
@@ -550,7 +575,7 @@
             </div>
           </div>
           <!-- News info -->
-          <div class="info info-docs" ng-if="currentInfo == 'news'">
+          <div class="info info-docs" ng-if="panel.currentInfo == 'news'">
             <h4 class="info-title">Aktualności</h4>
             <div ng-controller="NewsCtrl as news" class="news-table-container">
               <!-- preloader -->
@@ -577,7 +602,7 @@
             </div>
           </div>
           <!--  -->
-          <span ng-click="hideInfo()" class="close-cross glyphicon glyphicon-remove"></span>
+          <span ng-click="panel.hideInfo()" class="close-cross glyphicon glyphicon-remove"></span>
         </div>
       </div>
       <!--  -->
@@ -611,12 +636,13 @@
   <script src="/scripts/services/edit-services-service.js"></script>
   <script src="/scripts/services/docs-service.js"></script>
   <script src="/scripts/services/news-service.js"></script>
-  <script src="/scripts/services/news-service.js"></script>
   <script src="/scripts/directives/pw-capital-validator.js"></script>
   <script src="/scripts/directives/pw-length-validator.js"></script>
   <script src="/scripts/directives/pw-match-validator.js"></script>
   <script src="/scripts/directives/pw-number-validator.js"></script>
   <script src="/scripts/directives/pw-special-validator.js"></script>
+  <script src="/scripts/etc/PluginDetect_PDFReader.js"></script>
+  <script src="/scripts/etc/PDFReader.js "></script>
   <!-- endbuild -->
 </body>
 

@@ -14,17 +14,36 @@ angular.module('panelApp')
       'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'
     };
   })
-  .controller('EditServicesFormCtrl', function($scope, $timeout, editServicesService) {
+  .controller('EditServicesFormCtrl', function($scope, $timeout, restService, editServicesService) {
 
-    $scope.checkServices = checkServices;
-    $scope.toggleService = toggleService;
-    $scope.submitEditServicesForm = submitEditServicesForm;
-    $scope.resetEditServicesForm = resetEditServicesForm;
-    $scope.wishList = [];
-    $scope.editServicesMessage = null;
-    $scope.editServicesFormSubmitted = false;
+    var vm = this;
+    vm.terminals = null;
+    vm.services = null;
+    vm.currentEditTerminal = {
+      services: []
+    };
+    vm.editServicesMessage = null;
+    vm.editServicesFormSubmitted = false;
+    vm.checkServices = checkServices;
+    vm.toggleService = toggleService;
+    vm.submitEditServicesForm = submitEditServicesForm;
+    vm.resetEditServicesForm = resetEditServicesForm;
+    vm.setCurrentEditTerminalByNumber = setCurrentEditTerminalByNumber;
+    vm.wishList = [];
+
+    restService.then(function success(resp) {
+      vm.terminals = resp.data.terminals;
+      vm.services = resp.data.services;
+    }, function error(resp) {
+      console.log(resp.data);
+    });
 
     function checkServices(terminal, service) {
+
+      if(!terminal.services[0]) {
+        return;
+      }
+
       var terminalServicesLength = terminal.services.length;
 
       for (var i = 0; i < terminalServicesLength; i++) {
@@ -35,6 +54,15 @@ angular.module('panelApp')
       return false;
     }
 
+    function setCurrentEditTerminalByNumber(terminalNumber) {
+      for (var i = 0; i < vm.terminals.length; i++) {
+        if (vm.terminals[i].number === terminalNumber) {
+          vm.currentEditTerminal = vm.terminals[i];
+        }
+      }
+      $scope.panel.scrollTo('detailsContainer');
+    }
+
     function toggleService(event, currentTerminal) {
       var toggledService = event.target.attributes['data-service'].value;
       var state = event.target.checked;
@@ -43,14 +71,14 @@ angular.module('panelApp')
 
       currentChange.terminal = currentTerminal;
       currentChange.service = toggledService;
-      currentChange.serviceName = $scope.getFullServiceName(toggledService);
+      currentChange.serviceName = $scope.panel.getFullServiceName(toggledService);
       currentChange.state = state;
 
       var confirmed = confirm('Czy na pewno chcesz zmienić usługę ' + currentChange.serviceName + ' na terminalu ' + currentTerminal.name + '?');
 
       if (confirmed) {
-        $scope.wishList.push(currentChange);
-        buildMessage($scope.wishList);
+        vm.wishList.push(currentChange);
+        buildMessage(vm.wishList);
       } else {
         event.preventDefault();
         return;
@@ -77,7 +105,7 @@ angular.module('panelApp')
         document.getElementById('editServicesMessage').value = msg;
       }
 
-      $scope.editServicesMessage = document.getElementById('editServicesMessage').value;
+      vm.editServicesMessage = document.getElementById('editServicesMessage').value;
     }
 
     function submitEditServicesForm(editServicesMessage) {
@@ -89,13 +117,13 @@ angular.module('panelApp')
       editServicesService(message).then(function success(resp) {
 
         if (resp.status === 200) {
-          $scope.editServicesFormSubmitted = true;
+          vm.editServicesFormSubmitted = true;
 
           $timeout(function() {
-            $scope.hideInfo();
-            $scope.resetEditServicesForm();
-            $scope.editServicesFormSubmitted = false;
-          }, 3000)
+            vm.hideInfo();
+            vm.resetEditServicesForm();
+            vm.editServicesFormSubmitted = false;
+          }, 3000);
         }
       }, function error(resp) {
         console.log(resp);
@@ -103,8 +131,8 @@ angular.module('panelApp')
     }
 
     function resetEditServicesForm() {
-      $scope.hideInfo();
-      $scope.editServicesMessage = null;
+      $scope.panel.hideInfo();
+      vm.editServicesMessage = null;
     }
 
   });
