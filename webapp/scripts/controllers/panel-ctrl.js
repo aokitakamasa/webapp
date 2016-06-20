@@ -54,18 +54,18 @@ angular.module('panelApp')
       }
       vm.currentTerminal = terminal;
       console.log(vm.currentTerminal);
-      scrollTo('detailsContainer');
+      // scrollTo('detailsContainer');
     }
 
     function setCurrentService(service) {
       vm.currentTerminal = null;
       vm.currentService = service;
-      scrollTo('detailsContainer');
+      // scrollTo('detailsContainer');
     }
 
     function setCurrentInfo(subject) {
       vm.currentInfo = subject;
-      scrollTo('infoContainer');
+      // scrollTo('infoContainer');
     }
 
     function hideDetails() {
